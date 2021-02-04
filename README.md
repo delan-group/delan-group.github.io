@@ -1,0 +1,4 @@
+# delan-group.github.io
+我们整理资料，下载地址是dl.mcru.xyz速度从来不会慢.
+如果你支持我们，我们支持门罗币捐赠。地址：
+42rutSCfcpjMjRztqzLdss371uLr1oJG9QXJ8RdnXSJNWPfadKrjP9iBY1jUAq7QS16t9fE1c185HA1cjDm1gP6FHiZ9MR2
