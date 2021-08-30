@@ -1,31 +1,34 @@
 [base]
-name=CentOS-6.10
+name=CentOS-6 - Base
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos-vault/6.5/os/$basearch/
 enabled=1
-failovermethod=priority
-baseurl=http://mirrors.cloud.aliyuncs.com/centos-vault/6.10/os/$basearch/
 gpgcheck=1
-gpgkey=http://mirrors.cloud.aliyuncs.com/centos-vault/RPM-GPG-KEY-CentOS-6
-
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-6
+#released updates
 [updates]
-name=CentOS-6.10
+name=CentOS-6 - Updates
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos-vault/6.5/updates/$basearch/
 enabled=1
-failovermethod=priority
-baseurl=http://mirrors.cloud.aliyuncs.com/centos-vault/6.10/updates/$basearch/
 gpgcheck=1
-gpgkey=http://mirrors.cloud.aliyuncs.com/centos-vault/RPM-GPG-KEY-CentOS-6
-
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-6
+#additional packages that may be useful
 [extras]
-name=CentOS-6.10
+name=CentOS-6 - Extras
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos-vault/6.5/extras/$basearch/
 enabled=1
-failovermethod=priority
-baseurl=http://mirrors.cloud.aliyuncs.com/centos-vault/6.10/extras/$basearch/
 gpgcheck=1
-gpgkey=http://mirrors.cloud.aliyuncs.com/centos-vault/RPM-GPG-KEY-CentOS-6
-
-[epel]
-name=Extra Packages for Enterprise Linux 6 - $basearch
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-6
+#additional packages that extend functionality of existing packages
+[centosplus]
+name=CentOS-6 - Plus
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos-vault/6.5/centosplus/$basearch/
+gpgcheck=1
 enabled=1
-failovermethod=priority
-baseurl=http://mirrors.cloud.aliyuncs.com/epel-archive/6/$basearch
-gpgcheck=0
-gpgkey=http://mirrors.cloud.aliyuncs.com/epel-archive/RPM-GPG-KEY-EPEL-6
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-6
+#contrib - packages by Centos Users
+[contrib]
+name=CentOS-6 - Contrib
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos-vault/6.5/contrib/$basearch/
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-6
