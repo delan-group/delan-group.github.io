@@ -750,10 +750,7 @@ domain_check() {
 		echo -e " 你的域名: $yellow$domain$none 未解析到: $cyan$ip$none"
 		echo
 		echo -e " 你的域名当前解析到: $cyan$test_domain$none"
-		echo
-		echo "备注...如果你的域名是使用 Cloudflare 解析的话..在 Status 那里点一下那图标..让它变灰"
-		echo
-		exit 1
+		
 	fi
 }
 
